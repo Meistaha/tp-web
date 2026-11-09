@@ -1,0 +1,40 @@
+
+<!--
+Les 7 défauts corrigés :
+DOCTYPE absent : le navigateur peut utiliser le mode quirks.
+Attribut lang absent : les lecteurs d'écran ne connaissent pas la langue du document.
+Balises p et strong mal imbriquées : l'ordre de fermeture des éléments est incorrect.
+hr dans p : hr est un élément de séparation qui ne peut pas être contenu dans p.
+Identifiant info dupliqué : un id doit être unique dans le document.
+Attribut title sans guillemets : la valeur contenant des espaces n'est pas correctement délimitée.
+Paragraphe après html : le contenu doit être placé à l'intérieur de body.
+-->
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Page à corriger</title>
+
+    <meta
+      name="description"
+      content="Page de démonstration corrigée du TEK-UP Code Club."
+    />
+    <meta name="author" content="Mohamed Taha Ghabi" />
+  </head>
+  <body>
+    <p>Bienvenue au <strong>club de code.</strong></p>
+    <p>Nos ateliers ont lieu le mercredi</p>
+    <hr />
+    <p>de 14 h à 17 h.</p>
+    <p id="info">Salle B12</p>
+    <p id="niveaux">Ouverts à tous les niveaux</p>
+    <p title="horaires du club">Entrée libre</p>
+    <p>
+      Contact : club@tek-up.tn<br />
+      Tél. : 70 000 000
+    </p>
+    <p>Texte ajouté après la fin du document dans le code initial.</p>
+  </body>
+</html>
